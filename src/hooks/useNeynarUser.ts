@@ -3,6 +3,24 @@ import { useEffect, useState } from "react";
 export interface NeynarUser {
   fid: number;
   score: number;
+  username?: string;
+  pfp_url?: string;
+  profile?: {
+    bio?: {
+      text?: string;
+    };
+  };
+  follower_count?: number;
+  following_count?: number;
+  verifications?: string[];
+  verified_addresses?: {
+    eth_addresses?: string[];
+    sol_addresses?: string[];
+  };
+  active_status?: string;
+  power_badge?: boolean;
+  custody_address?: string;
+  created_at?: number;
 }
 
 export function useNeynarUser(context?: { user?: { fid?: number } }) {
