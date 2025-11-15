@@ -48,7 +48,7 @@ export function UserInfoTab() {
       <div className="flex items-center justify-center h-[calc(100vh-200px)] px-6">
         <div className="text-center w-full max-w-md mx-auto">
           <p className="text-lg mb-2">No user information available</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Please make sure you're logged in</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Please make sure you&apos;re logged in</p>
         </div>
       </div>
     );
